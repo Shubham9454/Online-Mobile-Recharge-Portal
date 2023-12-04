@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <style>
+    .text {
+      font-size: 20px;
+    }
+
+    .option {
+      display: flexbox;
+    }
+
+    .banner-image {
+      background-image: url(image/desktop.png);
+      background-size: cover;
+    }
+    .header-main{
+      position: relative;
+    }
+
+    element.style {
+}
+
+
+  </style>
+
+  <!-- This is javascript code  -->
+
+  <script>
+    function checkPrice() {
+      var price = parseInt(document.getElementById("price").value);
+      if (price <= 50) {
+        window.location.href = "page1.html";
+      } else if (price <= 100) {
+        window.location.href = "page2.html";
+      } else {
+        window.location.href = "page3.html";
+      }
+    }
+  </script>
+</head>
+<!-- <body class="bg-dark"> -->
+
+<body class="banner-image">
+
+  <!-- This is navbar  -->
+
+  <nav class="header-main navbar navbar-expand bg-dark">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse">
+        <p class="fs-1 text-white">Get an idea</p>
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <b><a class="text nav-link active text-white  " aria-current="page" href="/index.html">Home</a></b>
+          </li>
+          <li class="text nav-item">
+            <b><a class="nav-link active text-white " aria-current="page" href="About.html">About</a></b>
+          </li>
+          <li class="text nav-item">
+            <b><a class="nav-link active text-white " aria-current="page" href="contact.html">Contact</a></b>
+          </li>
+          <li class="nav-item">
+            <b><a class="text nav-link active text-white " aria-current="page" href="help.html">Help</a></b>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- This is opratos to your finding plans -->
+  <div class="grid text-center ">
+    <h1 class="fs-1 fw-bold text-white">Mobile Recharge Plans</h1>
+
+    <!-- This is the option to find the prepaid or postpaid Recharge  -->
+    <!-- <div class="row">
+      <div class="g-col-3">
+        <label for="" class="fs-6 fw-bold text-white">Select Operator</label>
+        <select name="" id="" class="form-select">
+          <option value="Select">Select</option>
+          <option value="Prepaid"><a href="Prepaid.html">Prepaid</a></option>
+          <option value="Postpaid"><a href="Postpaid.html">Postpaid</a></option>
+        </select>
+      </div>
+    </div> -->
+    
+    <!-- input box -->
+    <div class="row d-inline">
+      <div class="g-col-3 d-inline">
+        <label for="price" class="fs-6 fw-bold text-white">Enter amount</label>
+        <input type="text" id="price" placeholder="Enter amount" class="form-control">
+      </div>
+      <!-- Search buttion -->
+      <div class="row d-inline">
+        <div class="col-3 d-inline">
+          <label for="" class="fs-6 fw-bold text-white">Search</label>
+          <button type="button" onclick="checkPrice()" class="btn btn-primary form-control">Search</button>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
